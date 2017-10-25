@@ -89,7 +89,45 @@ void List::remove(int k)
 	
 	delete delPtr;
 	num_elements--;
+}
+
+void List::get(int k)
+{
+	if (k < 1 or k > num_elements)//if the location is invalid 
+	     throw out_of_range("List::get(" +to_string(k)+") failed. (valid indices are 1 to "+to_string(num_elements)+")");
+	
+	if (k == 1)
+	{
+		
+		cout << endl;
+		cout << frontPtr->data;
+		
+	}  
+	else
+	{
+		Node* getPtr = frontPtr;
+		
+		int loc = 1;
+		
+		while(loc != k )
+		{
+			getPtr = getPtr->link;
+			loc++;
+		}
+		
+		cout << endl;
+		cout << getPtr->data;
+		
 	}
+}
+
+void List::clear()
+{
+	while (num_elements > 0)
+	{
+		remove(1);
+	}
+}
 	
 	//Implementations of missing operations
 	
