@@ -130,12 +130,6 @@ void List::clear()
 	}
 }
 
-void List::display()
-{
-	List l1;
-	
-	for (int i = 1; i <= num_elements; i++)
-	l1.get(i);
-}
+
 	//Implementations of missing operations
 	

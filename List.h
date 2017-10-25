@@ -20,7 +20,7 @@ class List //begin List definition
      int size();//return the number of elements in the List
      void get(int k);
      void clear();
-     void display();
+   
      
      /** MISSING OPERATIONS */
      //... fill in ....

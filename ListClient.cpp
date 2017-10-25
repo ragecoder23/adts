@@ -12,7 +12,7 @@ int main()
  L1.insert(4,2);
  L1.get(2);
  L1.get(1);
- L1.display();
+ 
  
  
  
